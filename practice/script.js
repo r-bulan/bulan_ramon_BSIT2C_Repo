@@ -12,7 +12,7 @@ var isSunk = false;
 
 // Game logic
 while (isSunk == false) {
-  guess = prompt('Ready!, Aim!, Fire! (enter number 0-6)');
+  guess = prompt('Ready!, Aim!, Fire! (enter number 1-6)');
   if (guess > 6 || guess < 1) {
     alert('Please enter a valid cell number!');
   } else if (guessedNumbers.includes(guess)) {
