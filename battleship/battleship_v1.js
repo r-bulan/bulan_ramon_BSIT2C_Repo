@@ -4,7 +4,7 @@ var location2 = 4;
 var location3 = 5;
 
 var guess;
-var hit = 0;
+var hits = 0;
 var guesses = 0;
 
 var isSunk = false;
@@ -19,9 +19,9 @@ while (isSunk == false) {
 
     if (guess == location1 || guess == location2 || guess == location3) {
       alert('HIT!!');
-      hit += 1;
+      hits += 1;
 
-      if (hit == 3) {
+      if (hits == 3) {
         isSunk = true;
         alert('You sank my battleship!🛳️');
       }
@@ -34,8 +34,8 @@ while (isSunk == false) {
 var stats =
   'You sank my battleship at: ' +
   guesses +
-  'guesses' +
-  'and your accuracy is: ' +
+  ' guesses ' +
+  ' and your accuracy is: ' +
   3 / guesses;
 
 alert(stats);
